@@ -24,6 +24,6 @@ print('e' in message)
 print("Hell" in message)
 
 
-# Условие на ждину
+# Условие на длину
 print(len(message) >= 5)
 
