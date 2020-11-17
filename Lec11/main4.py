@@ -10,6 +10,6 @@ print("After:", nums)
 """
 a = [10 ,20, 30]
 b = a[:]#.copy()
-b.append(2000)
+b.append(2000) 
 print("A:", a)
 print("B:", b) 
