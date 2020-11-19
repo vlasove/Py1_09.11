@@ -1,39 +1,41 @@
 """
-Файл содержащий набор функций и переменных, которым будут все пользоваться
-Модуль - это любой файл с расширением .py
+Module docstring
 """
 
-def add(a:int, b:int):
-    """
-    a + b 
-    """
-    return a + b 
 
-def sub(a:int, b:int):
+def add(a_arg: int, b_arg: int):
     """
-    a - b
+    a_arg + b_arg
     """
-    return a - b 
+    return a_arg + b_arg
 
-def mult(a:int, b:int):
-    """
-    a * b 
-    """
-    return a * b 
 
-def div(a:int, b:int):
+def sub(a_arg: int, b_arg: int):
     """
-    a / b
+    a_arg - b_arg
     """
-    return a / b
+    return a_arg - b_arg
+
+
+def mult(a_arg: int, b_arg: int):
+    """
+    a_arg * b_arg
+    """
+    return a_arg * b_arg
+
+
+def div(a_arg: int, b_arg: int):
+    """
+    a_arg / b+arg
+    """
+    return a_arg / b_arg
+
 
 TEMPERATURE = -21
-"""
-Секретный секрет №2. - переменная __name___
-"""
-#print(__name__)
+
+# print(__name__)
 
 
 if __name__ == "__main__":
-    result = add(10, 20) + sub(20, 30) / mult(200,50000) ** div(10,3)
-    print("RESULT OF:", result)
+    RESULT = add(10, 20) + sub(20, 30) / mult(200, 50000) ** div(10, 3)
+    print("RESULT OF:", RESULT)
